@@ -24,6 +24,9 @@
   1. Create 2 New Script Include :
      - ChangeRequestStateModel_major
      - ChangeRequestStateModelSNC_major
+       <img width="700" alt="Screenshot 2023-07-10 201518" src="https://github.com/swapnilborase/SNOW_Major_Change_Request/assets/73363115/17efcdfd-dfad-488b-9405-ed37edd92697">
+       <img width="700" alt="Screenshot 2023-07-10 201531" src="https://github.com/swapnilborase/SNOW_Major_Change_Request/assets/73363115/21c2ee51-d7b0-4727-a122-eb7f6df23025">
+
   1. Find `ChangeRequestStateHandler` Script Include & edit it [Refer the screenshot]
 
   <img width="600" alt="script_include_change_req_state_handler" src="https://github.com/swapnilborase/SNOW_Major_Custom_Change_Request/assets/73363115/d8aa2b20-8f0f-41f3-bf40-99377c70894d">
