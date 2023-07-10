@@ -1,6 +1,11 @@
 # SNOW_Major_Change_Request
-  Create custom Change Request called `Major Change` in SNOW.
-
+  1. Create custom Change Request called `Major Change` in SNOW.
+  1. This Change will have 4 different levels of Approvals.
+       - Assess Approval [State: Assess]
+       - Assignment Group Manager Approval [State: Assess]
+       - High Risk Approver [State: Assess && Risk: High]
+       - CAB Approver [State: Authorize] 
+      
 ## Steps to create New Change Management in SNOW
 ### Complete the following steps to add a new choice to the Type field.
   1. Open an existing change request.
