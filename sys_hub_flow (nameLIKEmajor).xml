@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2023-07-10 13:06:07">
+<sys_hub_flow action="INSERT_OR_UPDATE">
+<access>public</access>
+<acls/>
+<active>true</active>
+<annotation/>
+<callable_by_client_api>false</callable_by_client_api>
+<category display_value=""/>
+<compiler_build>glide-utah-12-21-2022__patch4-hotfix2-06-23-2023_06-23-2023_2224.zip</compiler_build>
+<copied_from>1f54be96731310108ef62d2b04f6a7d7</copied_from>
+<copied_from_name>Change - Normal - Implement</copied_from_name>
+<description>Process a Change Request that uses the Normal Change Model, which is in the state of Implement.</description>
+<internal_name>change__major__implement</internal_name>
+<label_cache>[{"name":"Created or Updated_1.current","label":"Trigger➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","attributes":{}},{"name":"f68d02e8-0c99-4b69-8fc4-9dffd0cb363d.state","label":"2➛3 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"0909b196-5cb0-4580-9ba6-56a3bfa10baf.context","label":"7➛8 - Change - Implementation tasks➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+<latest_snapshot>11f3b0cc9780311051593d400153afdf</latest_snapshot>
+<master_snapshot>5b50bc489780311051593d400153affd</master_snapshot>
+<name>Change - Major - Implement</name>
+<natlang/>
+<outputs/>
+<pre_compiled>false</pre_compiled>
+<remote_trigger_id>bb50fc489780311051593d400153afd4</remote_trigger_id>
+<run_as>user</run_as>
+<run_with_roles/>
+<sc_callable>false</sc_callable>
+<show_draft_actions>false</show_draft_actions>
+<show_triggered_flows>false</show_triggered_flows>
+<status>published</status>
+<sys_class_name>sys_hub_flow</sys_class_name>
+<sys_created_by>daredevil</sys_created_by>
+<sys_created_on>2023-07-10 11:47:22</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>9440b8489780311051593d400153af6d</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_name>Change - Major - Implement</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_hub_flow_9440b8489780311051593d400153af6d</sys_update_name>
+<sys_updated_by>daredevil</sys_updated_by>
+<sys_updated_on>2023-07-10 11:47:53</sys_updated_on>
+<type>flow</type>
+</sys_hub_flow>
+<sys_hub_flow action="INSERT_OR_UPDATE">
+<access>public</access>
+<acls/>
+<active>true</active>
+<annotation/>
+<callable_by_client_api>false</callable_by_client_api>
+<category display_value=""/>
+<compiler_build>glide-utah-12-21-2022__patch4-hotfix2-06-23-2023_06-23-2023_2224.zip</compiler_build>
+<copied_from>2f33fe56731310108ef62d2b04f6a749</copied_from>
+<copied_from_name>Change - Normal - Authorize</copied_from_name>
+<description>Process a Change Request that uses the Normal Change Model, which is in the state of Authorize and is not on hold.</description>
+<internal_name>change__major__authorize</internal_name>
+<label_cache>[{"name":"19ab98e8-d132-4475-8e54-9363f8255f15.table_name","label":"6 - Update Record➛Change Request Table","reference":"change_request","reference_display":"Change Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"19ab98e8-d132-4475-8e54-9363f8255f15.record","label":"6 - Update Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.assignment_group.manager","label":"Trigger➛Change Request Record➛Assignment group➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_group","column_name":"manager"},{"name":"e11d8454-622f-4f6a-9d46-d29619ab328d.user_approved","label":"2➛3 - Check Change for User Approval➛User approved","reference_display":"User approved","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6ebc271f-9aec-461e-80a9-cc09283b5d15"}},{"name":"Created or Updated_1.current.assignment_group.manager.name","label":"Trigger➛Change Request Record➛Assignment group➛Manager➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created or Updated_1.current.reason","label":"Trigger➛Change Request Record➛Reason","reference":"","reference_display":"Reason","type":"choice","base_type":"choice","parent_table_name":"change_request","column_name":"reason","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Problem resolution","used":false,"image":"","rawLabel":"Problem resolution","selected":false,"missing":false,"reference":false,"value":"Problem resolution","parameters":{"name":"change_request"}},{"label":"User requested","used":false,"image":"","rawLabel":"User requested","selected":false,"missing":false,"reference":false,"value":"User requested","parameters":{"name":"change_request"}},{"label":"New or removed CI","used":false,"image":"","rawLabel":"New or removed CI","selected":false,"missing":false,"reference":false,"value":"New or removed CI","parameters":{"name":"change_request"}},{"label":"Hardware upgrade","used":false,"image":"","rawLabel":"Hardware upgrade","selected":false,"missing":false,"reference":false,"value":"Hardware upgrade","parameters":{"name":"change_request"}},{"label":"Software upgrade","used":false,"image":"","rawLabel":"Software upgrade","selected":false,"missing":false,"reference":false,"value":"Software upgrade","parameters":{"name":"change_request"}},{"label":"Network requirements","used":false,"image":"","rawLabel":"Network requirements","selected":false,"missing":false,"reference":false,"value":"Network requirements","parameters":{"name":"change_request"}},{"label":"Business requirements","used":false,"image":"","rawLabel":"Business requirements","selected":false,"missing":false,"reference":false,"value":"Business requirements","parameters":{"name":"change_request"}},{"label":"Legislation","used":false,"image":"","rawLabel":"Legislation","selected":false,"missing":false,"reference":false,"value":"Legislation","parameters":{"name":"change_request"}},{"label":"Location changed","used":false,"image":"","rawLabel":"Location changed","selected":false,"missing":false,"reference":false,"value":"Location changed","parameters":{"name":"change_request"}},{"label":"Product or service changed","used":false,"image":"","rawLabel":"Product or service changed","selected":false,"missing":false,"reference":false,"value":"Product or service changed","parameters":{"name":"change_request"}},{"label":"Other","used":false,"image":"","rawLabel":"Other","selected":false,"missing":false,"reference":false,"value":"Other","parameters":{"name":"change_request"}}]},{"name":"Created or Updated_1.current","label":"Trigger➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","attributes":{}},{"name":"58f8e86b-fdb0-47fc-991d-868b96bfc9f5.decisions","label":"4 - Apply Change Approval Policy➛Decisions","reference_display":"Decisions","type":"string_full_utf8","base_type":"string_full_utf8","attributes":{"uiType":"string_full_utf8","visible_in_fd":"false","uiTypeLabel":"String (Full UTF-8)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ceae4573-7f3f-46d0-a26e-13923ca0252b"}},{"name":"58f8e86b-fdb0-47fc-991d-868b96bfc9f5.state","label":"4 - Apply Change Approval Policy➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Not Yet Requested","value":"not requested","order":0.0},{"label":"Requested","value":"requested","order":1.0},{"label":"Approved","value":"approved","order":2.0},{"label":"Rejected","value":"rejected","order":3.0},{"label":"Cancelled","value":"cancelled","order":4.0},{"label":"No Longer Required","value":"not_required","order":5.0},{"label":"Skipped","value":"skipped","order":6.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ffef9f46-2397-4435-939c-3bb37b7a39a7"}},{"name":"7e6868b1-8d75-4475-a261-2ad514c6b204.email","label":"9 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.requested_by","label":"Trigger➛Change Request Record➛Requested by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"requested_by"},{"name":"Created or Updated_1.current.number","label":"Trigger➛Change Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"change_request","column_name":"number"},{"name":"Created or Updated_1.current.short_description","label":"Trigger➛Change Request Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"change_request","column_name":"short_description"},{"name":"76a54e8b-5189-4775-898d-554fdb92e02d.state","label":"11➛12 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}}]</label_cache>
+<latest_snapshot>0bc37c8c9780311051593d400153af7c</latest_snapshot>
+<master_snapshot>ea1034489780311051593d400153af97</master_snapshot>
+<name>Change - Major - Authorize</name>
+<natlang/>
+<outputs/>
+<pre_compiled>false</pre_compiled>
+<remote_trigger_id>971074489780311051593d400153afe0</remote_trigger_id>
+<run_as>user</run_as>
+<run_with_roles/>
+<sc_callable>false</sc_callable>
+<show_draft_actions>false</show_draft_actions>
+<show_triggered_flows>false</show_triggered_flows>
+<status>published</status>
+<sys_class_name>sys_hub_flow</sys_class_name>
+<sys_created_by>daredevil</sys_created_by>
+<sys_created_on>2023-07-10 11:46:05</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>21ffec089780311051593d400153af21</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_name>Change - Major - Authorize</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_hub_flow_21ffec089780311051593d400153af21</sys_update_name>
+<sys_updated_by>daredevil</sys_updated_by>
+<sys_updated_on>2023-07-10 11:46:46</sys_updated_on>
+<type>flow</type>
+</sys_hub_flow>
+<sys_hub_flow action="INSERT_OR_UPDATE">
+<access>public</access>
+<acls/>
+<active>true</active>
+<annotation/>
+<callable_by_client_api>false</callable_by_client_api>
+<category display_value=""/>
+<compiler_build>glide-utah-12-21-2022__patch4-hotfix2-06-23-2023_06-23-2023_2224.zip</compiler_build>
+<copied_from>edcf6ed2731310108ef62d2b04f6a7eb</copied_from>
+<copied_from_name>Change - Normal - Assess</copied_from_name>
+<description>Process a Change Request that uses the Normal Change Model, which is in the state of Assess and is not on hold.</description>
+<internal_name>change__major__assess</internal_name>
+<label_cache>[{"name":"9b01c44d-e525-492a-bb4a-23eef6cf1563.table_name","label":"5 - Update Record➛Change Request Table","reference":"change_request","reference_display":"Change Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9b01c44d-e525-492a-bb4a-23eef6cf1563.record","label":"5 - Update Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.requested_by.name","label":"Trigger➛Change Request Record➛Requested by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Change Request Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"change_request","column_name":"sys_id"},{"name":"Created or Updated_1.current.assignment_group.manager.name","label":"Trigger➛Change Request Record➛Assignment group➛Manager➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created or Updated_1.current.reason","label":"Trigger➛Change Request Record➛Reason","reference":"","reference_display":"Reason","type":"choice","base_type":"choice","parent_table_name":"change_request","column_name":"reason","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Problem resolution","used":false,"image":"","rawLabel":"Problem resolution","selected":false,"missing":false,"reference":false,"value":"Problem resolution","parameters":{"name":"change_request"}},{"label":"User requested","used":false,"image":"","rawLabel":"User requested","selected":false,"missing":false,"reference":false,"value":"User requested","parameters":{"name":"change_request"}},{"label":"New or removed CI","used":false,"image":"","rawLabel":"New or removed CI","selected":false,"missing":false,"reference":false,"value":"New or removed CI","parameters":{"name":"change_request"}},{"label":"Hardware upgrade","used":false,"image":"","rawLabel":"Hardware upgrade","selected":false,"missing":false,"reference":false,"value":"Hardware upgrade","parameters":{"name":"change_request"}},{"label":"Software upgrade","used":false,"image":"","rawLabel":"Software upgrade","selected":false,"missing":false,"reference":false,"value":"Software upgrade","parameters":{"name":"change_request"}},{"label":"Network requirements","used":false,"image":"","rawLabel":"Network requirements","selected":false,"missing":false,"reference":false,"value":"Network requirements","parameters":{"name":"change_request"}},{"label":"Business requirements","used":false,"image":"","rawLabel":"Business requirements","selected":false,"missing":false,"reference":false,"value":"Business requirements","parameters":{"name":"change_request"}},{"label":"Legislation","used":false,"image":"","rawLabel":"Legislation","selected":false,"missing":false,"reference":false,"value":"Legislation","parameters":{"name":"change_request"}},{"label":"Location changed","used":false,"image":"","rawLabel":"Location changed","selected":false,"missing":false,"reference":false,"value":"Location changed","parameters":{"name":"change_request"}},{"label":"Product or service changed","used":false,"image":"","rawLabel":"Product or service changed","selected":false,"missing":false,"reference":false,"value":"Product or service changed","parameters":{"name":"change_request"}},{"label":"Other","used":false,"image":"","rawLabel":"Other","selected":false,"missing":false,"reference":false,"value":"Other","parameters":{"name":"change_request"}}]},{"name":"Created or Updated_1.current","label":"Trigger➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","attributes":{}},{"name":"58f8e86b-fdb0-47fc-991d-868b96bfc9f5.decisions","label":"2➛3 - Apply Change Approval Policy➛Decisions","reference_display":"Decisions","type":"string_full_utf8","base_type":"string_full_utf8","attributes":{"uiType":"string_full_utf8","visible_in_fd":"false","uiTypeLabel":"String (Full UTF-8)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ceae4573-7f3f-46d0-a26e-13923ca0252b"}},{"name":"58f8e86b-fdb0-47fc-991d-868b96bfc9f5.state","label":"2➛3 - Apply Change Approval Policy➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Not Yet Requested","value":"not requested","order":0.0},{"label":"Requested","value":"requested","order":1.0},{"label":"Approved","value":"approved","order":2.0},{"label":"Rejected","value":"rejected","order":3.0},{"label":"Cancelled","value":"cancelled","order":4.0},{"label":"No Longer Required","value":"not_required","order":5.0},{"label":"Skipped","value":"skipped","order":6.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ffef9f46-2397-4435-939c-3bb37b7a39a7"}},{"name":"7e6868b1-8d75-4475-a261-2ad514c6b204.email","label":"8 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.requested_by","label":"Trigger➛Change Request Record➛Requested by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"requested_by"},{"name":"Created or Updated_1.current.number","label":"Trigger➛Change Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"change_request","column_name":"number"},{"name":"Created or Updated_1.current.short_description","label":"Trigger➛Change Request Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"change_request","column_name":"short_description"},{"name":"76a54e8b-5189-4775-898d-554fdb92e02d.state","label":"10➛11 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"276b51a1-4d3b-4c8f-a62d-07a87b9da0c8.record","label":"6➛Event Record","reference":"sysevent","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"276b51a1-4d3b-4c8f-a62d-07a87b9da0c8.table_name","label":"6➛Event Table","reference":"sysevent","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bc19b53a-e17c-4e90-b1f4-fa8f8d089135.record","label":"11➛Event Record","reference":"sysevent","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bc19b53a-e17c-4e90-b1f4-fa8f8d089135.table_name","label":"11➛Event Table","reference":"sysevent","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+<latest_snapshot>1863b08c9780311051593d400153afa4</latest_snapshot>
+<master_snapshot>b1bfa4089780311051593d400153af36</master_snapshot>
+<name>Change - Major - Assess</name>
+<natlang/>
+<outputs/>
+<pre_compiled>false</pre_compiled>
+<remote_trigger_id>7abfe4089780311051593d400153afac</remote_trigger_id>
+<run_as>user</run_as>
+<run_with_roles/>
+<sc_callable>false</sc_callable>
+<show_draft_actions>false</show_draft_actions>
+<show_triggered_flows>false</show_triggered_flows>
+<status>published</status>
+<sys_class_name>sys_hub_flow</sys_class_name>
+<sys_created_by>daredevil</sys_created_by>
+<sys_created_on>2023-07-10 11:03:30</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>7536e08c9740311051593d400153af82</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_name>Change - Major - Assess</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_hub_flow_7536e08c9740311051593d400153af82</sys_update_name>
+<sys_updated_by>daredevil</sys_updated_by>
+<sys_updated_on>2023-07-10 11:45:05</sys_updated_on>
+<type>flow</type>
+</sys_hub_flow>
+</unload>
